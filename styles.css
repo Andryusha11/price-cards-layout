@@ -42,7 +42,6 @@ ul {
 .price-card:nth-child(3) .price-card__title {
   margin-left: 102px;
   margin-right: 102px;
-  padding-top: 36px;
 }
 .price-card__title {
   font-size: 35px;
@@ -82,7 +81,7 @@ ul {
   text-align: center;
   margin: 40px 26px 0 26px;
 }
-.price-card__list {
+.price-card__options-list {
   margin-top: 40px;
 }
 .price-card__list-item {
