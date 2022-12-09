@@ -1,6 +1,4 @@
-# first_independent_project
-
-## My project
+## Project
 
 - HTML
 - CSS3
@@ -10,3 +8,7 @@
 ## Author
 
 - Andrew Valchuk
+
+## Link
+
+- https://andryusha11.github.io/price-cards-layout/
