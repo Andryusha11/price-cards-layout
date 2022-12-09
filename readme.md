@@ -1,6 +1,4 @@
-# first_independent_project
-
-## My project
+## Project
 
 - HTML
 - CSS3
