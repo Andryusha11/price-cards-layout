@@ -7,18 +7,26 @@
 ul {
   list-style: none;
 }
-
-.page {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #141b1c;
+.price-cards {
   min-width: 100vw;
   min-height: 100vh;
-}
-.price-cards {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #141b1c;
   padding: 65px 132px 115px;
+}
+.second {
+  position: relative;
+  & > h2 {
+    margin-left: 108px;
+    margin-right: 108px;
+  }
+}
+.third > h2 {
+  margin-left: 102px;
+  margin-right: 102px;
 }
 .price-card {
   height: 770px;
@@ -29,17 +37,6 @@ ul {
   overflow: hidden;
   &:last-child {
     margin-right: 0;
-  }
-  &:nth-child(2) &__title {
-    margin-left: 108px;
-    margin-right: 108px;
-  }
-  &:nth-child(2) {
-    position: relative;
-  }
-  &:nth-child(3) &__title {
-    margin-left: 102px;
-    margin-right: 102px;
   }
   &__title {
     font-size: 35px;
@@ -59,6 +56,15 @@ ul {
     width: 380px;
     text-align: center;
     margin-top: 33px;
+    &_green {
+      background: #5bb189;
+    }
+    &_blue {
+      background: #3a6ba5;
+    }
+    &_orange {
+      background: #ec632a;
+    }
   }
   &__price-text {
     display: inline-block;
@@ -87,21 +93,12 @@ ul {
     height: 50px;
     display: flex;
     align-items: center;
-    &:nth-child(odd) {
-      background-color: #2a3438;
-    }
-    &:before {
-      content: '✓';
-      width: 15px;
-      height: 13px;
-      margin-left: 22px;
-    }
-  }
-  &__list-item-text {
     font-size: 15px;
     line-height: 18px;
     color: #ffffff;
-    margin-left: 22px;
+    &:nth-child(odd) {
+      background-color: #2a3438;
+    }
   }
   &__button {
     height: 40px;
@@ -111,28 +108,32 @@ ul {
     color: #fff;
     border: none;
     margin: 39px 113px 40px 112px;
+    &_green {
+      background: #5bb189;
+    }
+    &_blue {
+      background: #3a6ba5;
+    }
+    &_orange {
+      background: #ec632a;
+    }
   }
 }
-
-.green-text {
-  color: #5bb189;
+.icon {
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  margin-left: 22px;
+  margin-right: 22px;
 }
-.green-background {
-  background: #5bb189;
+.green {
+  background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
 }
-
-.orange-text {
-  color: #ec632a;
+.blue {
+  background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
 }
-.orange-background {
-  background: #ec632a;
-}
-
-.blue-text {
-  color: #3a6ba5;
-}
-.blue-background {
-  background: #3a6ba5;
+.orange {
+  background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
 }
 
 .price-card__popular {
